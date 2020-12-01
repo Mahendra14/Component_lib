@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- talked about the three ways of css usage -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
     <h1>Mahendra's component library.</h1>
-    <p>I am attending neog.camp and I want to make a library which has all the html and css components
+    <p>I am attending <strong>Bold</strong> and I want to make a library which has all the html and css components
         which would make my projects good and consistent.
     </p>
     <br>
@@ -24,35 +25,36 @@
     <h2>@container</h2>
 
     <h3>Fluid Container</h3>
-    <div>This is a fluid container which goes to the end of the page.(end to end)</div>
+    <div class='container container-fluid'>This is a fluid container which goes to the end of the page.(end to end)</div>
 
     <h3>Centre Container</h3>
-    <div>This is a Centereded container which goes up to the specified width.</div>
+    <div class='container container-centre'>This is a Centereded container which goes up to the specified width.</div>
     <br>
     <hr>
     <h2>@links</h2>
 
-    <a href="/">Primary link</a>
-    <a href="/">Secondary link</a>
+    <a href="/" class="link primary-link">Primary link</a>
+    <a href="/" class="link secondary-link">Secondary link</a>
     <br>
     <hr>
     <h2>@lists</h2>
     <h3>unordered list</h3>
-    <ul>
+    <p>This list will not have the bullet </p>
+    <ul class="non-bullet">
         <li>Item1</li>
         <li>Item2</li>
         <li>Item3</li>
     </ul>
     <br>
     <h3>unordered inline list</h3>
-    <ul>
-        <li>Item Inline 1</li>
-        <li>Item Inline 2</li>
-        <li>Item Inline 3</li>
+    <ul class="non-bullet">
+        <li class="list-item-inline">Item Inline 1</li>
+        <li class="list-item-inline">Item Inline 2</li>
+        <li class="list-item-inline">Item Inline 3</li>
     </ul>
     <br>
     <h3>Reveresed ordered list</h3>
-    <ol>
+    <ol reversed>
         <li>milk</li>
         <li>eggs</li>
         <li>bread</li>
@@ -61,26 +63,26 @@
     <hr>
 
     <h2>@nav</h2>
-    <nav>
-        <div>IAmBrand</div>
-        <ul>
-            <li>
-                <a href="/">Home</a>
+    <nav class="navigation container">
+        <div class="nav-brand">IAmBrand</div>
+        <ul class="non-bullet nav-pills">
+            <li class="list-item-inline">
+                <a href="/" class="link link-active">Home</a>
             </li>
-            <li>
-                <a href="/">Projects</a>
+            <li class="list-item-inline">
+                <a href="/" class="link">Projects</a>
             </li>
-            <li>
-                <a href="/">about</a>
+            <li class="list-item-inline">
+                <a href="/" class="link">about</a>
             </li>
         </ul>
     </nav>
     <hr>
     <h2>@header</h2>
 
-    <header>
-        <img src="images/hero.svg" />
-        <h1>Heading inside hero</h1>
+    <header class="hero">
+        <img class="hero-img" src="images/hero.svg" />
+        <h1 class="hero-heading">Heading inside hero</h1>
     </header>
 
     <hr>
